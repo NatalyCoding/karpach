@@ -83,7 +83,7 @@ body {
 
 
 .main {
-  background-color: #E1E1E1;
+  background-color: #FFFFFF;
 }
 
 .hero {
@@ -137,5 +137,74 @@ body {
 
 .hero__progress {
   max-width: 468px;
+}
+
+/* courses section */
+
+.breadcrumbs {
+  padding: 14px 0;
+  font-weight: 700;
+}
+
+.breadcrumbs__link {
+  position: relative; 
+  margin-right: 50px;
+  color: #979FAD;
+
+}
+
+.breadcrumbs__link:nth-child(n+2)::before {
+  content: ' ';
+  position: absolute;
+  width: 22px;
+  height: 1px;
+  background-color: #979FAD;
+  top: 10px;
+  left: -36px;
+}
+.breadcrumbs__link:last-child {
+  margin-right: 0;
+  color: #323232;
+
+}
+.courses-choise {
+  background-color: #FAFAFA;
+  padding: 24px 0;
+  margin-bottom: 26px;
+}
+.courses-choise__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses-choise__header {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #222B3A;
+  position: relative;
+  margin-left: 34px;  
+}
+
+.courses-choise__header::before {
+  content: ' ';
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  top: 10px;
+  left: -34px;
+  background-color: #222B3A;
+}
+
+.courses-choise_dropdown {
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #F78000;
+  border: 2px solid #F78000;
+  border-radius: 3px;
+  padding: 12px 50px 12px 15px; 
 }
 
