@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li, ol li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;    
+}
+
+/* header */
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #fff;
+  max-height: 72px;
+  font-weight: 700;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__img {
+  max-width: 184px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.menu__item {
+  margin-right: 35px;
+}
+
+.menu__link, 
+.login__link {
+  font-size: 14px;
+  color: #222B3A;
+}
+
+.menu__link:hover,
+.login__link:hover {
+  border-bottom: 2px solid #0099DD;
+}
+
+.login {
+  position: relative;
+}
+
+.login::before {
+  position: absolute;
+  content: ' ';
+  background-image: url(./images/user.svg);
+  background-size: cover;
+  left: -22px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+}
+
+/* main */
+
+
+.main {
+  background-color: #E1E1E1;
+}
+
+.hero {
+  background-image: url(./images/header-bg.jpg);
+  color: #FFFFFF;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.hero__title {
+  font-family: 'Intro', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 53px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #FFFFFF;
+  padding-top: 70px;
+  margin-bottom: 10px;
+}
+.hero__subtitle {
+  font-family: 'Intro', sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #F78000;
+  margin-bottom: 30px;
+  
+}
+.hero__button {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 40px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 4px;
+  margin-bottom: 70px;
+}
+.hero__button:hover {
+  background-color: #F78000;
+}
+
+.hero__progress {
+  max-width: 468px;
+}
+
