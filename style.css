@@ -2,6 +2,7 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 a {
@@ -325,7 +326,7 @@ footer hr {
 }
 
 .footer__block hr {
-  display: inline-block;
+  display: block;
   text-align: left;
 }
 
