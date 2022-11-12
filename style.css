@@ -315,6 +315,20 @@ footer hr {
   padding-bottom: 45px ;
 }
 
+.footer__block {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.footer__block hr {
+  display: inline-block;
+  text-align: left;
+}
+
 .footer__block_title {
   font-size: 24px;
   line-height: 29px;
@@ -326,11 +340,11 @@ footer hr {
   padding-left: 0;
 }
 
-footer .footer_item li {
-  margin-bottom: 10px;
+.footer__block_list a{
+  color:#FFFFFF;
 }
 
 .footer__dark-line {
   height: 47px;
-  background-color: var(--dark-blue);
+  background-color: #222B3A;
 }
