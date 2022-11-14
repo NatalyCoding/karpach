@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul li, ol li {
@@ -38,10 +39,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-height: 72px;
 }
 
 .logo__img {
   max-width: 184px;
+  padding: 20px 20px 19px 0;
 }
 
 .menu__list {
@@ -58,9 +61,11 @@ body {
 .login__link {
   font-size: 14px;
   color: #222B3A;
+  transition: 0.3s;
 }
 
 .menu__link:hover,
+.menu__link:active,
 .login__link:hover {
   border-bottom: 2px solid #0099DD;
 }
@@ -88,7 +93,10 @@ body {
 }
 
 .hero {
+  background-color: #296DCE;
   background-image: url(./images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   color: #FFFFFF;
 }
 
@@ -109,6 +117,7 @@ body {
   padding-top: 70px;
   margin-bottom: 10px;
 }
+
 .hero__subtitle {
   font-family: 'Intro', sans-serif;
   font-size: 24px;
@@ -130,8 +139,10 @@ body {
   font-size: 14px;
   line-height: 17px;
   border-radius: 4px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+  transition: 0.3s;
 }
+
 .hero__button:hover {
   background-color: #F78000;
 }
